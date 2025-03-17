@@ -12,6 +12,17 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "iHa1tq5O91dwDhITn",
+      });
+   })();
+</script>
+<script src="form.js"></script>
 	</head>
 	<body class="is-preload">
 
@@ -257,7 +268,7 @@
 					<section class="wrapper style1 align-center">
 						<div class="inner medium">
 							<h2>"Connect with the 0.4 Gang"</h2>
-							<form action="https://formsubmit.co/thalhathariyil01@gmail.com" method="post">
+							<form>
 								<div class="fields">
 									<div class="field half">
 										<label for="name">Name</label>
@@ -273,7 +284,7 @@
 									</div>
 								</div>
 								<ul class="actions special">
-									<li><input type="submit" name="submit" id="submit" value="Send Message" /></li>
+									<li><input type="submit" name="submit" onclick="sentMail()" id="submit" value="Send Message" /></li>
 								</ul>
 							</form>
 
@@ -305,6 +316,7 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
+			
+			
 	</body>
 </html>
